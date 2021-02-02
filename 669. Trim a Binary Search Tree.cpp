@@ -6,7 +6,7 @@ should remain a descendant). It can be proven that there is a unique answer.
 
 Return the root of the trimmed binary search tree. Note that the root may change depending on the given bounds.
 
- 
+  
 
 Example 1:
 
