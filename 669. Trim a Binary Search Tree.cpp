@@ -31,7 +31,7 @@ Output: [1,null,2]
 Example 5:
 
 Input: root = [1,null,2], low = 2, high = 4
-Output: [2]
+Output: [2] 
  
 
 Constraints:
