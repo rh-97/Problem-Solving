@@ -37,6 +37,7 @@ Do a breadth first search to find the shortest path.
 */
 
 // SOLUTION
+// Breadth First Search
 // O(n)
 class Solution {
 public:
@@ -70,4 +71,5 @@ public:
         return -1;
     }
 };
+
 
