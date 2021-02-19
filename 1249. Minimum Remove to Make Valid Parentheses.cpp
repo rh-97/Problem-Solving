@@ -51,7 +51,7 @@ public:
         stack<int> S; // to store indices of characters to be removed
         int n = s.size();
         for (int i = 0; i < n; ++i) {
-            if (s[i] == '(') S.push(i); //this '(' is to be removed unless another ')' pairs with it
+            if (s[i] == '(') S.push(i); //this '(' is to be removed unless a ')' pairs with it
             else if (s[i] == ')') {
                 if (S.empty() or s[S.top()] == ')') { // ')' needs to be removed as it can't be paired with a '('
                     S.push(i);
