@@ -39,7 +39,7 @@ public:
         while (!Q.empty()) {
             queue<TreeNode*> q;
             swap(Q, q);
-            long long sum = 0;
+            double sum = 0;
             int n = q.size();
             while (!q.empty()) {
                 TreeNode* node = q.front();
@@ -48,7 +48,7 @@ public:
                 if (node->right) Q.push(node->right);
                 q.pop();
             }
-            averages.push_back((double) sum / (double) n);
+            averages.push_back(sum / n);
         }
         return averages;
     }
