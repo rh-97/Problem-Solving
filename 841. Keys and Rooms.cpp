@@ -52,10 +52,10 @@ public:
                     seen.insert(key);
                     S.push(key);
                 }
-                if (seen.size() == n) return true;
             }
+            if (seen.size() == n) return true;
         }
-        return seen.size() == n;
+        return false;
     }
 };
 
