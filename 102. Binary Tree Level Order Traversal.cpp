@@ -18,27 +18,27 @@
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-        if (root) dfs(root, 0);
+        if (root) dfs(root);
         return res;
     }
     
 private:
     vector<vector<int>> res;
     
-    void dfs(TreeNode* root, int i) {
+    void dfs(TreeNode* root, int level = 0) {
         
-        if (res.size() > i) {
+        if (res.size() > level) {
             
-            res[i].push_back(root->val);
+            res[level].push_back(root->val);
             
         } else {
             
             res.push_back({root->val});
         }
         
-        if (root->left) f(root->left, i + 1);
+        if (root->left) dfs(root->left, level + 1);
         
-        if (root->right) f(root->right, i + 1);
+        if (root->right) dfs(root->right, level + 1);
     }
 };
 
