@@ -1,5 +1,3 @@
-// DFS
-// O(n)
 
 /**
  * Definition for a binary tree node.
@@ -12,6 +10,11 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+
+// DFS
+// O(n)
+
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
