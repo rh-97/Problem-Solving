@@ -18,7 +18,9 @@ class Solution
         vector<int> maxx;
         
         for (int i = 0, j = 0; j < n; ++j) {
-            while (!li.empty() and li.back() < arr[j]) {
+            
+            if (!li.empty() and li.front() < arr[j]) li.clear();
+            else while (!li.empty() and li.back() < arr[j]) {
                 li.pop_back();
             }
             li.push_back(arr[j]);
